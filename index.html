@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+        <title>Hazard X | Emergency Control Panel</title>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap responsive -->
+    <link href="http://getbootstrap.com/2.3.2/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- My style sheet -->
+     <link rel="stylesheet" href="style.css">
+        
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="assets/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+          
+          <!-- <div id="credentials">
+              <span class="navbar-text">Ahmed Salem</span>
+              <button class="btn btn-outline-success my-2 my-sm-0 ml-5" type="submit">Sign Out</button>
+            
+          </div> -->
+            
+        <!-- </div> -->
+      </nav>
+
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item"><a id="incoming" class="nav-link active" href="#IC">Incoming Calls</a></lli>
+    <li class="nav-item"><a id="inci"  class = "nav-link" href="#incidents">Incidents</a></li>
+    <li class="nav-item"><a id="ma" class = "nav-link" href="#map">Map</a></li>
+    <!-- <li class="nav-item"><a id="chat" class = "nav-link" href="#chatbot">Chatbot</a></li> -->
+    
+    
+  </ul>
+  
+    <div id="map">
+        
+    </div>
+    <!-- <div id="chatbot">
+        <script src="https://assistant-web.watsonplatform.net/loadWatsonAssistantChat.js"></script>
+        <script>
+          window.loadWatsonAssistantChat({
+            integrationID: "b77be299-59b2-4778-a344-46a9c72c0475",
+            region: "eu-gb"
+          }).then(function(instance){
+            instance.render();
+          });
+        </script>
+    </div> -->
+    <div id="incidents">
+      <table class="table table-dark" id="incTable">
+        <thead>
+          <tr>
+            <th scope="col">Incident Type</th>
+            <th scope="col">Street Address</th>
+            <th scope="col">Lives at Risk</th>
+            <th scope="col">Description</th>
+            <th scope="col">Reporter</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <div id="IC">
+        <ul class="list-group">
+            <li class="list-group-item">(493) 796-8153</li>
+            <li class="list-group-item">(891) 866-9042</li>
+            <li class="list-group-item">(490) 832-3117</li>
+            <li class="list-group-item">(436) 418-8002</li>
+            <li class="list-group-item">(304) 590-6908</li>
+          </ul>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- //////////////////////////////  My JavaScript //////////////////////////////////// -->
+    <script type="text/javascript" src="app.js">
+        
+    </script>
+    <!-- ////////////////////////////////////For google maps API////////////////////////////// -->
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj1mrzIgc1c38Okglxkb7FLBnlsjhFZ_Q&callback=initMap"
+  type="text/javascript"></script>
+</body>
